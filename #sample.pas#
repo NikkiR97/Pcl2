@@ -1,0 +1,29 @@
+PROGRAM sample;
+
+VAR
+    i, j, k, n, m, o : integer;
+    alpha, beta5x : real;
+    
+BEGIN
+    i := 32;
+    j := i;
+    i := -2 + 3*j;
+
+    alpha := 9.3;
+    beta5x := alpha;
+    beta5x := alpha/3.7 - alpha*2.88;
+    beta5x := 8.45*(alpha + 9.12);
+
+    m := 2;    
+    n := 0;
+   
+    REPEAT
+       k:=m+1;
+    UNTIL
+	n := k;
+
+    IF n := 3
+    THEN o := 7;
+    ELSE o := 10;
+    
+END.

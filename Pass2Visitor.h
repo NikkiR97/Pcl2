@@ -28,7 +28,7 @@ public:
     antlrcpp::Any visitProgram(Pcl2Parser::ProgramContext *ctx) override;
     antlrcpp::Any visitHeader(Pcl2Parser::HeaderContext *ctx) override;
     antlrcpp::Any visitMainBlock(Pcl2Parser::MainBlockContext *ctx) override;
-    antlrcpp::Any visitStmt(Pcl2Parser::StmtContext *ctx) override;
+    antlrcpp::Any visitStmt(Pcl2Parser::StmtContext *ctx); //override
     antlrcpp::Any visitAssignmentStmt(Pcl2Parser::AssignmentStmtContext *ctx) override;
     antlrcpp::Any visitAddSubExpr(Pcl2Parser::AddSubExprContext *ctx) override;
     antlrcpp::Any visitMulDivExpr(Pcl2Parser::MulDivExprContext *ctx) override;

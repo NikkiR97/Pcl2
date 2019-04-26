@@ -16,13 +16,14 @@ BEGIN
 
     m := 2;    
 
-    FOR k := m TO 5 DO 
-    BEGIN
-	n := k;
-    END;
+	LOOP(3) 
+	BEGIN
+	m := m + 1;
+	END;
 
-    IF n := 3
-    THEN o := 7;
-    ELSE o := 10;
+	IF(n==2)
+	BEGIN
+	o := 7;
+	END;	
     
 END.

@@ -38,19 +38,10 @@
 	dup
 	invokenonvirtual PascalTextIn/<init>()V
 	putstatic        sample/_standardIn LPascalTextIn;
-
-; i:=32
-
 	ldc	32
 	putstatic	sample/i I
-
-; j:=i
-
 	getstatic	sample/i I
 	putstatic	sample/j I
-
-; i:=-2+3*j
-
 	ldc	2
 	ineg
 	ldc	3
@@ -58,19 +49,10 @@
 	imul
 	iadd
 	putstatic	sample/i I
-
-; alpha:=9.3
-
 	ldc	9.3
 	putstatic	sample/alpha F
-
-; beta5x:=alpha
-
 	getstatic	sample/alpha F
 	putstatic	sample/beta5x F
-
-; beta5x:=alpha/3.7-alpha*2.88
-
 	getstatic	sample/alpha F
 	ldc	3.7
 	fdiv
@@ -79,25 +61,23 @@
 	fmul
 	fsub
 	putstatic	sample/beta5x F
-
-; beta5x:=8.45*(alpha+9.12)
-
 	ldc	8.45
 	getstatic	sample/alpha F
 	ldc	9.12
 	fadd
 	fmul
 	putstatic	sample/beta5x F
-
-; m:=2
-
 	ldc	2
 	putstatic	sample/m I
-
-; FORk:=m
-
+	ldc	3
 	getstatic	sample/m I
-	putstatic	sample/FOR I
+	ldc	1
+	iadd
+	putstatic	sample/m I
+	getstatic	sample/n I
+	ldc	2
+	ldc	7
+	putstatic	sample/o I
 
 	getstatic     sample/_runTimer LRunTimer;
 	invokevirtual RunTimer.printElapsedTime()V

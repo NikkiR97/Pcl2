@@ -26,7 +26,7 @@ CPP_DEPS += \
 target/generated-sources/antlr4/%.o: ../target/generated-sources/antlr4/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I"/home/nikkir97/eclipse-workspace/Pcl2" -I"/home/nikkir97/eclipse-workspace/Pcl2/target/generated-sources/antlr4" -I/home/nikkir97/boost_1_70_0 -I/usr/local/include/antlr4-runtime -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	g++ -std=c++0x -I/home/toan/Downloads/boost_1_69_0 -I/usr/local/include/antlr4-runtime -I"/home/toan/eclipse-workspace/Lab_6" -I"/home/toan/eclipse-workspace/Lab_6/target/generated-sources/antlr4" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
